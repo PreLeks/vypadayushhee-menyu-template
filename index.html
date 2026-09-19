@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Выпадающее меню</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+
+      <div class="logo">
+        <a href="#" class="logo__link">Pulse.</a>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Пространство</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Проекты</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Команды</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article id="profile" class="profile">
+
+        <button type="button" class="profile__button">
+          <img src="img/avatar.png" alt="аватар" class="profile__avatar">
+          <span class="profile__name">Антон</span>
+        </button>
+
+        <article id="user-card" class="user-card">
+          <div class="user-card__info">
+            <img src="img/avatar.png" alt="аватар" class="user-card__avatar">
+            <div class="user-card__description">
+              <h2 class="user-card__name">Антон Смирнов</h2>
+              <p class="user-card__position">Креативный директор</p>
+            </div>
+          </div>
+          <nav class="user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item">
+                <a href="#" class="user-menu__link">Профиль</a>
+              </li>
+              <li class="user-menu__item user-menu__item--notifications">
+                <a href="#" class="user-menu__link user-menu__link--notifications">Уведомления
+                  <span class="user-menu__link--badge">8</span>
+                </a>
+              </li>
+              <li class="user-menu__item user-menu__item--appearance">
+                <a href="#" class="user-menu__link">Внешний вид</a>
+              </li>
+              <li class="user-menu__item user-menu__item--payment">
+                <a href="#" class="user-menu__link">Оплата</a>
+              </li>
+              <li class="user-menu__item user-menu__item--exit">
+                <a href="#" class="user-menu__link">Выйти</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+
+      </article>
+
+    </header>
+
+    <main class="content">
+
+      <div class="landing">
+        <h1 class="landing__title">Твори
+          без
+          лимитов</h1>
+        <p class="landing__subtitle">
+          Идеи заслуживают смелого воплощения. Сотрудничайте со своей командой, черпайте вдохновение и выполняйте
+          творческую работу быстрее.
+        </p>
+        <button type="button" class="landing__button">Начать проект</button>
+      </div>
+
+      <div class="statistics">
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <span class="statistics__value">52</span>
+            <p class="statistics__text">Активных задачи</p>
+          </li>
+          <li class="statistics__item">
+            <span class="statistics__value">18</span>
+            <p class="statistics__text">Членов команды онлайн</p>
+          </li>
+          <li class="statistics__item">
+            <span class="statistics__value">92%</span>
+            <p class="statistics__text">Еженедельных целей закрыто</p>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
