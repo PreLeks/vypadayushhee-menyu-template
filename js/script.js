@@ -1,21 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const profileUser = document.getElementById('profile');
-  const userCard = document.getElementById('user-card');
+const btn = document.querySelector('[data-dropdown-btn]');
+const dropdown = document.querySelector('[data-dropdown]');
 
-  profileUser.addEventListener('click', (e) => {
+if (btn && dropdown) {
+  btn.addEventListener('click', (e) => {
     e.stopPropagation();
-    userCard.classList.add('user-card--active');
+    dropdown.classList.toggle('dropdown--visible');
   });
 
   document.addEventListener('click', (e) => {
-    if (!userCard.contains(e.target) && !profileUser.contains(e.target)) {
-      userCard.classList.remove('user-card--active');
+    if (e.target.closest('[data-dropdown-close]') || (!dropdown.contains(e.target) && e.target !== btn)) {
+      dropdown.classList.remove('dropdown--visible');
     }
   });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && userCard.classList.contains('user-card--active')) {
-      userCard.classList.remove('user-card--active');
-    }
-  });
-});
+}

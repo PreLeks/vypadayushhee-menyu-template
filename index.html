@@ -10,100 +10,89 @@
 
 <body>
 
-  <div class="container">
+  <div class="content">
+
     <header class="header">
-
-      <div class="logo">
-        <a href="#" class="logo__link">Pulse.</a>
-      </div>
-
-      <nav class="menu" aria-label="Основное меню сайта">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Пространство</a>
+      <a href="#" class="header__logo">PULSE.</a>
+      <nav class="header__nav" aria-label="Основное меню сайта">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Пространство</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Проекты</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Проекты</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Команды</a>
+          <li class="header__item">
+            <a href="#" class="header__link">Команды</a>
           </li>
         </ul>
       </nav>
-
-      <article id="profile" class="profile">
-
-        <button type="button" class="profile__button">
-          <img src="img/avatar.png" alt="аватар" class="profile__avatar">
-          <span class="profile__name">Антон</span>
+      <div class="header__info">
+        <button type="button" class="header__btn" data-dropdown-btn>
+          <img src="img/avatar.png" alt="Антон" class="header__avatar">
+          Антон
         </button>
-
-        <article id="user-card" class="user-card">
-          <div class="user-card__info">
-            <img src="img/avatar.png" alt="аватар" class="user-card__avatar">
-            <div class="user-card__description">
-              <h2 class="user-card__name">Антон Смирнов</h2>
-              <p class="user-card__position">Креативный директор</p>
+        <div class="dropdown" data-dropdown>
+          <div class="dropdown__top">
+            <img src="img/avatar.png" alt="Антон Смирнов" class="dropdown__avatar">
+            <div class="dropdown__text">
+              <div class="dropdown__name">Антон Смирнов</div>
+              <div class="dropdown__position">Креативный директор</div>
             </div>
           </div>
-          <nav class="user-menu" aria-label="Меню пользователя">
-            <ul class="user-menu__list">
-              <li class="user-menu__item">
-                <a href="#" class="user-menu__link">Профиль</a>
+          <nav class="dropdown__nav" aria-label="Меню пользователя">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link" data-dropdown-close>Профиль</a>
               </li>
-              <li class="user-menu__item user-menu__item--notifications">
-                <a href="#" class="user-menu__link user-menu__link--notifications">Уведомления
-                  <span class="user-menu__link--badge">8</span>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link" data-dropdown-close>Уведомления
+                  <div class="dropdown__count">8</div>
                 </a>
               </li>
-              <li class="user-menu__item user-menu__item--appearance">
-                <a href="#" class="user-menu__link">Внешний вид</a>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link" data-dropdown-close>Внешний вид</a>
               </li>
-              <li class="user-menu__item user-menu__item--payment">
-                <a href="#" class="user-menu__link">Оплата</a>
-              </li>
-              <li class="user-menu__item user-menu__item--exit">
-                <a href="#" class="user-menu__link">Выйти</a>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link" data-dropdown-close>Оплата</a>
               </li>
             </ul>
           </nav>
-        </article>
-
-      </article>
-
+          <button type="button" class="dropdown__logout" data-dropdown-close>Выйти</button>
+        </div>
+      </div>
     </header>
 
-    <main class="content">
-
-      <div class="landing">
-        <h1 class="landing__title">Твори
-          без
-          лимитов</h1>
-        <p class="landing__subtitle">
-          Идеи заслуживают смелого воплощения. Сотрудничайте со своей командой, черпайте вдохновение и выполняйте
-          творческую работу быстрее.
-        </p>
-        <button type="button" class="landing__button">Начать проект</button>
-      </div>
-
-      <div class="statistics">
-        <ul class="statistics__list">
-          <li class="statistics__item">
-            <span class="statistics__value">52</span>
-            <p class="statistics__text">Активных задачи</p>
-          </li>
-          <li class="statistics__item">
-            <span class="statistics__value">18</span>
-            <p class="statistics__text">Членов команды онлайн</p>
-          </li>
-          <li class="statistics__item">
-            <span class="statistics__value">92%</span>
-            <p class="statistics__text">Еженедельных целей закрыто</p>
-          </li>
-        </ul>
-      </div>
-
+    <main>
+      <section class="hero">
+        <div class="hero__text">
+          <h1 class="hero__title">Твори
+            без
+            лимитов
+          </h1>
+          <p class="hero__descr">
+            Идеи заслуживают смелого воплощения. Сотрудничайте со своей командой, черпайте вдохновение и выполняйте
+            творческую работу быстрее.
+          </p>
+          <a href="#" class="hero__link">Начать проект</a>
+        </div>
+        <div class="hero__items">
+          <div class="hero__item">
+            <div class="hero__digit">52</div>
+            Активных задачи
+          </div>
+          <div class="hero__item">
+            <div class="hero__digit">18</div>
+            Членов команды онлайн
+          </div>
+          <div class="hero__item">
+            <div class="hero__digit">92%</div>
+            Еженедельных целей закрыто
+          </div>
+        </div>
+      </section>
     </main>
+
   </div>
 
   <script src="js/script.js"></script>
